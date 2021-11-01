@@ -23,7 +23,7 @@ export const StyledTxt = styled.div`
     -webkit-box-orient: ${({boxOrient}) => boxOrient ? boxOrient : ''};
 
     &:hover {
-        color: ${({hoverColor, theme}) => hoverColor ? theme.colors.text[hoverColor] : ''};
+        color: ${({hover, theme}) => hover ? theme.colors.text[hover] : ''};
     }
 `
 

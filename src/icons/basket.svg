@@ -1,16 +1,4 @@
-import React from 'react';
-import styled from "styled-components";
-
-const StyledBasketIcon = styled.svg`
-    margin: ${({ margin }) => margin ? margin : ''};
-    padding: ${({ padding }) => padding ? padding : ''};
-    cursor: pointer;
-`
-
-
-export default function BasketIcon({ margin, padding }) {
-    return (
-        <StyledBasketIcon margin={margin} padding={padding}  width="26"
+<svg width="26"
                           height="23" viewBox="0 0 26 23" version="1.1" xmlns="http://www.w3.org/2000/svg">
             <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                 <g transform="translate(-278.000000, -19.000000)" fill="#979797">
@@ -19,6 +7,4 @@ export default function BasketIcon({ margin, padding }) {
                         id="cart" fill="#979797"/>
                 </g>
             </g>
-        </StyledBasketIcon>
-    )
-}
+        </svg>

@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { Link, NavLink, useLocation } from "react-router-dom";
-import Logo from './logo';
-import FlexBox from './FlexBox';
-import Txt, { StyledTxt } from './Txt';
-import Button from './button';
-import PAicon from './iconComponents/personalAreaIcon';
-import CarviarIcon from './iconComponents/caviarIcon';
-import BasketIcon from './iconComponents/basketIcon';
+import Logo from '../logo';
+import FlexBox from '../FlexBox';
+import Txt, { StyledTxt } from '../Txt';
+import Button from '../button';
+
+import Img from '../img';
+import Carviar from "../../icons/egg.svg"
+import Person from "../../icons/person.svg"
+import Basket from "../../icons/basket.svg"
 
 const StyledHeader = styled.header`
     position: fixed;
@@ -62,7 +64,7 @@ const StyledPersonIcon = styled.svg`
     padding: ${({ padding }) => padding ? padding : ''};
 `
 
-export default function Header() {
+export default function HighResHeader() {
 
     const [isMainPage, setIsMainPage] = useState(true);
     const location = useLocation();
@@ -80,7 +82,7 @@ export default function Header() {
                     </StyledLink>
                     <FlexBox flexDirection='column' margin='0 0 0 34px'>
                         <FlexBox height='30px' $alignItems='flex-end'>
-                            <Txt margin='0 8px 0 0' hoverColor='lightRed' transition='color 0.3s' cursor='pointer'>
+                            <Txt margin='0 8px 0 0' hover='lightRed' transition='color 0.3s' cursor='pointer'>
                                 Волгоград
                             </Txt>
                             <StyledTelLink href='tel:8-800-550-30-30'>
@@ -88,9 +90,8 @@ export default function Header() {
                             </StyledTelLink>
                         </FlexBox>
                         <FlexBox height='30px' $justifyContent='space-between' $alignItems='flex-end' cursor='pointer'>
-                            <Txt hoverColor='lightRed' fontWeight='bold'>
-                                Личный кабинет
-                                <PAicon margin='0 0 -6px 8px'/>
+                            <Txt hover='lightRed' fontWeight='bold'>
+                                Личный кабинет<Img image={Person} display="inline"  width="17px" margin='0 0 -6px 8px'/>
                             </Txt>
                         </FlexBox>
                     </FlexBox>
@@ -98,41 +99,41 @@ export default function Header() {
                 {!isMainPage &&
                     <FlexBox height='100%' $justifyContent='flex-end' $alignItems='center' width='100%' margin='0 20px'>
                         <StyledNavLink to='/sets'>
-                            <Txt hoverColor='lightRed' fontSize='16px'>Сеты</Txt>
+                            <Txt hover='lightRed' fontSize='16px'>Сеты</Txt>
                         </StyledNavLink>
                         <StyledNavLink to='/rolls'>
-                            <Txt hoverColor='lightRed' fontSize='16px'>Роллы</Txt>
+                            <Txt hover='lightRed' fontSize='16px'>Роллы</Txt>
                         </StyledNavLink>
                         <StyledNavLink to='/sushi'>
-                            <Txt hoverColor='lightRed' fontSize='16px'>Суши</Txt>
+                            <Txt hover='lightRed' fontSize='16px'>Суши</Txt>
                         </StyledNavLink>
                         <StyledNavLink to='/salads'>
-                            <Txt hoverColor='lightRed' fontSize='16px'>Салаты</Txt>
+                            <Txt hover='lightRed' fontSize='16px'>Салаты</Txt>
                         </StyledNavLink>
                     </FlexBox>}
                 <FlexBox height='100%' $justifyContent='flex-end' $alignItems='center' width='100%'>
                     <Container>
-                        <Txt display='inline' hoverColor='lightRed' transition='color 0.5s' cursor='pointer'>
+                        <Txt display='inline' hover='lightRed' transition='color 0.5s' cursor='pointer'>
                             О компании
                         </Txt>
-                        <Txt display='inline' margin='0 0 0 15px' hoverColor='lightRed' transition='color 0.5s'
+                        <Txt display='inline' margin='0 0 0 15px' hover='lightRed' transition='color 0.5s'
                             cursor='pointer'>
                             Условия доставки
                         </Txt>
                         <br />
-                        <Txt display='inline-block' margin='10px 0 0 15px' hoverColor='lightRed'
+                        <Txt display='inline-block' margin='10px 0 0 15px' hover='lightRed'
                             transition='color 0.5s' cursor='pointer'>
                             Пользовательское соглашение
                         </Txt>
                     </Container>
                     <Button fontSize='15px' borderRadius='19px' boxShadow='0 2px 4px 0 rgb(0 0 0 / 10%)'
-                        hoverColor='lightRed' cursor='pointer' margin='-10px 0 0 30px'>
+                        hover='lightRed' cursor='pointer' margin='-10px 0 0 30px'>
                         <FlexBox>
-                            Икринки <CarviarIcon margin='0 0 0 15px'/>
+                            Икринки <Img image={Carviar} margin='0 0 0 15px'/>
                         </FlexBox>
                     </Button>
                 <FlexBox>
-                    <BasketIcon  margin='-10px 0 0 60px' />
+                    <Img image={Basket} cursor='pointer' margin='-10px 0 0 60px' />
                 </FlexBox>
                 </FlexBox>
 
