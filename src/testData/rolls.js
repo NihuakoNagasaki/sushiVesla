@@ -1,4 +1,4 @@
-export const rollsItems = [
+export const commonRolls = [
     {
         id: '1',
         name: 'Половинки из сложных роллов',

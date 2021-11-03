@@ -73,7 +73,7 @@ export default function HighResFooter() {
                         <Svg width="22" height="21" viewBox="0 0 438.536 438.536" cursor='pointer'>
                             <MarkerIcon />
                         </Svg>
-                        <Txt display='inline' fontSize='1rem' hoverColor='lightRed' cursor='pointer'
+                        <Txt display='inline' fontSize='1rem' hover='lightRed' cursor='pointer'
                             margin='0 0 0 5px'>
                             Ближайшие СушиВесла
                         </Txt>
@@ -81,19 +81,19 @@ export default function HighResFooter() {
                 </FlexBox>
 
                 <FlexBox margin='0 0 0 5%'>
-                    <Txt fontSize='1rem' hoverColor='lightRed' cursor='pointer'>
+                    <Txt fontSize='1rem' hover='lightRed' cursor='pointer'>
                         Акции
                     </Txt>
-                    <Txt fontSize='1rem' hoverColor='lightRed' cursor='pointer' margin='0 0 0 20px'>
+                    <Txt fontSize='1rem' hover='lightRed' cursor='pointer' margin='0 0 0 20px'>
                         Франшиза
                     </Txt>
-                    <Txt fontSize='1rem' hoverColor='lightRed' cursor='pointer' margin='0 0 0 20px'>
+                    <Txt fontSize='1rem' hover='lightRed' cursor='pointer' margin='0 0 0 20px'>
                         Вакансии
                     </Txt>
-                    <Txt fontSize='1rem' hoverColor='lightRed' cursor='pointer' margin='0 0 0 20px'>
+                    <Txt fontSize='1rem' hover='lightRed' cursor='pointer' margin='0 0 0 20px'>
                         Отзывы
                     </Txt>
-                    <Txt fontSize='1rem' hoverColor='lightRed' cursor='pointer' margin='0 0 0 20px'>
+                    <Txt fontSize='1rem' hover='lightRed' cursor='pointer' margin='0 0 0 20px'>
                         Политика обработки персональных данных
                     </Txt>
                 </FlexBox>

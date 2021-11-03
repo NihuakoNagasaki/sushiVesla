@@ -1,4 +1,4 @@
-export const friedRollsItems = [
+export const friedItems = [
     {
         id: '1',
         name: 'Жареные половинки',
@@ -6,6 +6,7 @@ export const friedRollsItems = [
         count: 2,
         personCount: 1,
         image: 'https://xn--80adjkr6adm9b.xn--p1ai/pics/60925eb4e4b0e51a040c61ac?width=300',
+        
     },
     {
         id: '2',

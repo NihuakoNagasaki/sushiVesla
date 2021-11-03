@@ -6,7 +6,7 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import GilroyRegular from './fonts/Gilroy-Regular.woff';
 import GilroyBold from './fonts/Gilroy-Bold.woff';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Loader from './components/loader';
+
 
 
 const Global = createGlobalStyle`

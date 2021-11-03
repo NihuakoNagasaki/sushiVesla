@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 export const StyledFlexBox = styled.div`    
-    display: flex;
+    display: ${({display}) => display ? display : 'flex'};
     flex-direction: ${({flexDirection}) => flexDirection ? flexDirection : 'row'};
     flex-wrap: ${({flexWrap}) => flexWrap ? flexWrap : 'nowrap'};
     flex-grow: ${({flexGrow}) => flexGrow ? flexGrow : ''};
@@ -14,6 +14,9 @@ export const StyledFlexBox = styled.div`
     margin: ${({margin}) => margin ? margin : ''};
     padding: ${({padding}) => padding ? padding : ''};
     cursor: ${({cursor}) => cursor ? cursor : ''};  
+    z-index: ${({zIndex}) => zIndex ? zIndex : ''};  
+    position: ${({position}) => position ? position : ''};  
+    background-color: ${({backgroundColor}) => backgroundColor ? backgroundColor : ''};
 `
 
 export default function FlexBox({children, ...props}) {

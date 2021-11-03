@@ -1,4 +1,4 @@
-export const saladsItems = [
+export const pokeAndSaladsItems = [
     {
         id: '1',
         name: 'Салат Цезарь с курицей',
@@ -22,5 +22,21 @@ export const saladsItems = [
         weight: 115,
         price: 209,
         image: 'https://xn--80adjkr6adm9b.xn--p1ai/pics/5ee1f2a5e4b091fe9956bff4?width=300',
+    },
+    {
+        id: '4',
+        name: 'Поке с шелковым тофу',
+        description: 'Тофу, авокадо, перец болгарский, кукуруза, имбирь, салат чука, рис, нори, кунжут',
+        weight: 280,
+        price: 239,
+        image: 'https://xn--80adjkr6adm9b.xn--p1ai/pics/5f5b3b43e4b09c8b002b4ca8?width=300',
+    },
+    {
+        id: '5',
+        name: 'Поке с диким тунцом',
+        description: 'Тунец, авокадо, чука, огурец, кукуруза, имбирь, рис, нори, кунжут',
+        weight: 280,
+        price: 249,
+        image: 'https://xn--80adjkr6adm9b.xn--p1ai/pics/5f5b3367e4b09c8b00216ff7?width=300',
     },
 ]

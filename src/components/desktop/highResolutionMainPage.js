@@ -19,13 +19,8 @@ import soupPattern from "../../img/soup_pattern.png";
 import soups from "../../img/soups.png";
 import tempura from "../../img/tempura.png";
 import beverages from "../../img/beverages.png";
+import Grid from '../grid';
 
-const StyledHighResMainPage = styled.div`
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 41.3vw;
-    padding: 0 30px 0 30px  ;   
-`
 
 const Row = styled(NavLink)`
     display: ${({ display }) => display ? display : 'block'};
@@ -66,12 +61,12 @@ const Container = styled.div`
 
 export default function HighResMainPage() {
     return (
-        <StyledHighResMainPage>
+        <Grid display= "grid" gridTemplateColumns="repeat(4, 1fr)" heigh= "41.3vw" padding="0 30px 0 30px" >
             <Column $backgroundColor='blue' zIndex='10' position='relative' overflow='visible'>
                 <Img zIndex='100' image={leaf} width='22%' position='absolute' top='19.5%' right='-13%' />
                 <Row to='/sets' transform='translateY(-7.9%)' $hover='translateY(-0.5%)'
                     transition='transform 1s'>
-                    <Img image={sets} margin='0 0 -10% 0' width='90%' />
+                    <Img image={sets} margin='3% 0 -10% 0' width='90%' />
                     <Txt color='white' fontSize='3.5vw' fontWeight='bold' uppercase margin='1% 0 0 15%'>
                         Сеты
                     </Txt>
@@ -174,6 +169,6 @@ export default function HighResMainPage() {
                 </Container>
                 <Img image={soupPattern} width='23%' position='absolute' top='41%' right='0' />
             </Column>
-        </StyledHighResMainPage>
+        </Grid>
     )
 }
