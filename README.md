@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SushiVesla Demo page
+# ["Потыкать"](sushiveslatest.herokuapp.com)
 
 ## Available Scripts
 
