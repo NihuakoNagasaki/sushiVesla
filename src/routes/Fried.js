@@ -38,7 +38,7 @@ export default function Fried(props) {
 
     return (<>
         {mobile && <Container>
-            <Txt fontSize='17px' lineHeight='24px' fontWeight='bold' color='darkGrey'>Запеченные Роллы</Txt>
+            <Txt fontSize='17px' lineHeight='24px' fontWeight='bold' color='darkGrey'>Жаренные Роллы</Txt>
         </Container>
         }
         {props.arrayOfFried ? <Grid gridTemplateColumns="repeat(3, 1fr)" gap="10px" margin="1.5% 0 0 0" padding="0 30px 0 30px">

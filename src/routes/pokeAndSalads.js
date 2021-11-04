@@ -39,7 +39,7 @@ export default function PokeAndSalads(props) {
 
     return (<>
         {mobile && <Container>
-            <Txt fontSize='17px' lineHeight='24px' fontWeight='bold' color='darkGrey'>Сеты</Txt>
+            <Txt fontSize='17px' lineHeight='24px' fontWeight='bold' color='darkGrey'>Поке и салаты</Txt>
         </Container>
         }
         {props.arrayOfpokeAndSalads? <Grid gridTemplateColumns="repeat(3, 1fr)" gap="10px" margin="1.5% 0 0 0" padding="0 30px 0 30px">

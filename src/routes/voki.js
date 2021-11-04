@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
 import styled from "styled-components";
-import GetBakedRolls from '../actions/bakedRolls';
+import GetVoki from '../actions/voki';
 import { AdaptiveContext } from '../App';
 import Card from '../components/card';
 import Grid from '../components/grid';
@@ -18,16 +18,16 @@ const Container = styled.div`
     background-color: ${({theme}) => theme.colors.background.grey};
 `
 
-export default function Baked(props) {
-    const {mobile} = useContext(AdaptiveContext)
+export default function Voki(props) {
+    const {mobile} = useContext(AdaptiveContext)    
     
     useEffect(() => {
         let isCancelled = false
-        document.title = "СушиВесла - Запеченные Роллы"
+        document.title = "СушиВесла - Воки"
 
-        GetBakedRolls().then( (result) => {
+        GetVoki().then( (result) => {
             if (!isCancelled) {
-                props.getArrayOfBaked(result)                
+                props.getАrrayOfVoki(result)                
             }
         })
         return () => {
@@ -37,11 +37,11 @@ export default function Baked(props) {
 
     return (<>
         {mobile && <Container>
-            <Txt fontSize='17px' lineHeight='24px' fontWeight='bold' color='darkGrey'>Запеченные Роллы</Txt>
+            <Txt fontSize='17px' lineHeight='24px' fontWeight='bold' color='darkGrey'>Воки</Txt>
         </Container>
         }
-        {props.arrayOfBaked ? <Grid gridTemplateColumns="repeat(3, 1fr)" gap="10px" margin="1.5% 0 0 0" padding="0 30px 0 30px">
-            {props.arrayOfBaked.map(roll => <Card key={roll.id} image={roll.image} header={roll.name}
+        {props.arrayOfVoki ? <Grid gridTemplateColumns="repeat(3, 1fr)" gap="10px" margin="1.5% 0 0 0" padding="0 30px 0 30px">
+            {props.arrayOfVoki.map(roll => <Card key={roll.id} image={roll.image} header={roll.name}
                                           description={roll.description} count={roll.count} price={roll.price}
                                           weight={roll.weight} $backgroundColor={roll.color}
                                           persons={roll.personCount}/>)}

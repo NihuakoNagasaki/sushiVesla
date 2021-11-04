@@ -36,7 +36,7 @@ export default function MoreSideBar() {
                 <Img image={sushi} height="30px" padding="0 0 10px 0"/>
                 <Txt hover='lightRed' fontSize='16px'>Суши</Txt>
             </StyledSideBarLink>            
-            <StyledSideBarLink to="">
+            <StyledSideBarLink to="/sause">
                 <Img image={sause} height="30px" padding="0 0 10px 0"/>
                 <Txt hover='lightRed' fontSize='16px'>Соусы</Txt>
             </StyledSideBarLink>            

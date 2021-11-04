@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Load = styled.div`
 
     display: block;
+    margin-top: 5%;
     color: #eb1f40;
     background-color: ${({theme}) => theme.colors.background.white};
     position: relative;

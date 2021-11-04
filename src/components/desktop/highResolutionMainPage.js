@@ -61,7 +61,7 @@ const Container = styled.div`
 
 export default function HighResMainPage() {
     return (
-        <Grid display= "grid" gridTemplateColumns="repeat(4, 1fr)" heigh= "41.3vw" padding="0 30px 0 30px" >
+        <Grid display= "grid" gridTemplateColumns="repeat(4, 1fr)" height= "41.3vw" padding="0 30px 0 30px" >
             <Column $backgroundColor='blue' zIndex='10' position='relative' overflow='visible'>
                 <Img zIndex='100' image={leaf} width='22%' position='absolute' top='19.5%' right='-13%' />
                 <Row to='/sets' transform='translateY(-7.9%)' $hover='translateY(-0.5%)'

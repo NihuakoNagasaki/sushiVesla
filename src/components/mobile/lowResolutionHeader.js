@@ -7,6 +7,7 @@ import Txt from '../Txt';
 import Filter from '../../icons/filter.svg'
 import Basket from '../../icons/basket.svg'
 import Menu from '../../icons/menu.svg'
+import { NavLink } from 'react-router-dom';
 
 
 const StyledLowResHeader = styled.div`
@@ -22,6 +23,14 @@ const StyledLowResHeader = styled.div`
     background-color: ${({ theme }) => theme.colors.background.white};
 `
 
+const StyledNavLink = styled(NavLink)`
+    text-decoration: none;
+    padding: 6px 20px;
+    border-radius: 19px;   
+    
+    
+`
+
 const Container = styled.div`
  display: flex;
  flex-direction: ${({flexDirection}) => flexDirection};
@@ -31,7 +40,9 @@ const Container = styled.div`
 export default function LowResHeader() {
     return (
         <StyledLowResHeader>
+            <StyledNavLink to="/">
             <Img cursor='pointer' image={Menu} width='23px' />
+            </StyledNavLink>
             <FlexBox flexDirection='column' height='100%' $justifyContent='space-evenly'>
                 <Container flexDirection="column">
                     <Txt fontSize='12px' hover='lightRed' transition='color 0.3s' cursor='pointer' fontWeight='bold' color='black'>

@@ -1,6 +1,6 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect} from 'react';
 import styled from "styled-components";
-import GetBakedRolls from '../actions/bakedRolls';
+import GetSause from '../actions/sause';
 import { AdaptiveContext } from '../App';
 import Card from '../components/card';
 import Grid from '../components/grid';
@@ -18,33 +18,34 @@ const Container = styled.div`
     background-color: ${({theme}) => theme.colors.background.grey};
 `
 
-export default function Baked(props) {
+export default function Sause(props) {
     const {mobile} = useContext(AdaptiveContext)
     
+
     useEffect(() => {
         let isCancelled = false
-        document.title = "СушиВесла - Запеченные Роллы"
+        document.title = "СушиВесла - соусы"
 
-        GetBakedRolls().then( (result) => {
+        GetSause().then(function (result) {
             if (!isCancelled) {
-                props.getArrayOfBaked(result)                
+                props.getАrrayOfSause(result)
             }
         })
         return () => {
             isCancelled = true;
-          };
-    })
+        };
+    }, [])
 
     return (<>
         {mobile && <Container>
-            <Txt fontSize='17px' lineHeight='24px' fontWeight='bold' color='darkGrey'>Запеченные Роллы</Txt>
+            <Txt fontSize='17px' lineHeight='24px' fontWeight='bold' color='darkGrey'>Соусы</Txt>
         </Container>
         }
-        {props.arrayOfBaked ? <Grid gridTemplateColumns="repeat(3, 1fr)" gap="10px" margin="1.5% 0 0 0" padding="0 30px 0 30px">
-            {props.arrayOfBaked.map(roll => <Card key={roll.id} image={roll.image} header={roll.name}
+        {props.arrayOfSause? <Grid gridTemplateColumns="repeat(3, 1fr)" gap="10px" margin="1.5% 0 0 0" padding="0 30px 0 30px">
+            {props.arrayOfSause.map(roll => <Card key={roll.id} image={roll.image} header={roll.name}
                                           description={roll.description} count={roll.count} price={roll.price}
                                           weight={roll.weight} $backgroundColor={roll.color}
-                                          persons={roll.personCount}/>)}
+                                          personCount={roll.personCount}/>)}
         </Grid> : <Loader/>}
     </>
 )

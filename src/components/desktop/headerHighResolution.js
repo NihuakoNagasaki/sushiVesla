@@ -39,12 +39,12 @@ const StyledLink = styled(Link)`
     flex-grow: 1;
 `
 const Container = styled.div`
-    
+    margin: ${({margin}) => margin ? margin : ''};
 `
 
 const StyledNavLink = styled(NavLink)`
     text-decoration: none;
-    padding: 6px 20px;
+    padding: 6px 10px;
     border-radius: 19px;
     
     &.active  > ${StyledTxt} {
@@ -65,7 +65,7 @@ const StyledNavLink = styled(NavLink)`
 
 const StyledMore = styled.a `
     text-decoration: none;
-    padding: 6px 20px;
+    padding: 6px 10px;
     border-radius: 19px;
     cursor: pointer;
 
@@ -112,7 +112,7 @@ export default function HighResHeader() {
                         <StyledLink to="/">
                             <Logo />
                         </StyledLink>
-                        <FlexBox flexDirection='column' margin='0 0 0 34px'>
+                        <FlexBox flexDirection='column' margin='0 0 0 38px'>
                             <FlexBox height='30px' $alignItems='flex-end'>
                                 <Txt margin='0 8px 0 0' hover='lightRed' transition='color 0.3s' cursor='pointer'>
                                     Волгоград
@@ -146,8 +146,8 @@ export default function HighResHeader() {
                                 <Txt hover='lightRed' fontSize='16px' onMouseEnter={(() => sideBarToggle("more"))}>Ещё</Txt>
                             </StyledMore>
                         </FlexBox>}
-                    <FlexBox height='100%' $justifyContent='flex-end' $alignItems='center' width='100%'>
-                        <Container>
+                    <FlexBox height='100%' $justifyContent='flex-end' $alignItems='center' width='100%' margin="0 0 5px 0">
+                        <Container margin="0 50px 0 0">
                             <Txt display='inline' hover='lightRed' transition='color 0.5s' cursor='pointer'>
                                 О компании
                             </Txt>
@@ -162,7 +162,7 @@ export default function HighResHeader() {
                             </Txt>
                         </Container>
                         <Button fontSize='15px' borderRadius='19px' boxShadow='0 2px 4px 0 rgb(0 0 0 / 10%)'
-                            hover='lightRed' cursor='pointer' margin='-10px 0 0 30px'>
+                            hover='lightRed' cursor='pointer' margin='-10px -30px 0 10px'>
                             <FlexBox>
                                 Икринки <Img image={Carviar} margin='0 0 0 15px' />
                             </FlexBox>
