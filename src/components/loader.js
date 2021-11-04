@@ -9,7 +9,7 @@ const Load = styled.div`
     background-color: ${({theme}) => theme.colors.background.white};
     position: relative;
     top: calc(50% - 4em);
-    left: calc(50% - 4em);
+    left: calc(50% - 3em);
     width: 6em;
     height: 6em;
     border: 1.1em solid rgba(0, 0, 0, 0.2);
