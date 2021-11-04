@@ -110,7 +110,7 @@ export default function LowResMainPage() {
                     Напитки
                 </Txt>
             </StyledLink>
-            <StyledLink to='/sauces'>
+            <StyledLink to='/sause'>
                 <Container>
                     <Img image={sauces} width='fit-content' margin='0 auto' />
                 </Container>
