@@ -1,5 +1,5 @@
 # SushiVesla Demo page
-# ["Потыкать"](sushiveslatest.herokuapp.com)
+# ["Потыкать"](https://sushiveslatest.herokuapp.com/)
 
 ## Available Scripts
 
