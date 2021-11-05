@@ -13,6 +13,7 @@ const StyledGrid = styled.div`
         grid-template-columns: repeat(2, 1fr);
         margin-top: -100px;
         margin-bottom: 5%;
+        height: 100%;
     }
     
     @media screen and (max-width: 1099px) {

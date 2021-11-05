@@ -40,6 +40,10 @@ const StyledLink = styled(Link)`
 `
 const Container = styled.div`
     margin: ${({margin}) => margin ? margin : ''};
+
+    @media screen and (max-width: 1190px) {
+        margin: 0;
+    }
 `
 
 const StyledNavLink = styled(NavLink)`
