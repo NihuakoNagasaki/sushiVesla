@@ -182,7 +182,7 @@ export default function HighResHeader() {
             </StyledHeader >
             
                 <SideBar transform={sideBarVisibility}>
-                    <FlexBox display="flex" width='100%' backgroundColor="#f1f1f1" $justifyContent='space-between' height='109px' $alignItems='center' margin='0 auto'>
+                    <FlexBox boxShadow="0 5px 7px rgb(0 0 0 / 10%)" display="flex" width='100%' backgroundColor="#f1f1f1" $justifyContent='space-between' height='109px' $alignItems='center' margin='0 auto'>
                         <FlexBox height='100%' $justifyContent='flex-end' $alignItems='center' width='100%' margin='0 20px'>
                             {contentVisibility == "rolls" ? <SideBarRolls /> : contentVisibility == "more" ? <MoreSideBar /> : ''}
                         </FlexBox>

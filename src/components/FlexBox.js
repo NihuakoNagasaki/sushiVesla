@@ -17,6 +17,7 @@ export const StyledFlexBox = styled.div`
     z-index: ${({zIndex}) => zIndex ? zIndex : ''};  
     position: ${({position}) => position ? position : ''};  
     background-color: ${({backgroundColor}) => backgroundColor ? backgroundColor : ''};
+    box-shadow: ${({boxShadow}) => boxShadow ? boxShadow : ''};
 `
 
 export default function FlexBox({children, ...props}) {
