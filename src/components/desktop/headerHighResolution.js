@@ -11,7 +11,7 @@ import Carviar from "../../icons/egg.svg"
 import Person from "../../icons/person.svg"
 import Basket from "../../icons/basket.svg"
 import SideBar from '../headerSideBar';
-import HoverButton, { StyledHoverButton } from '../hoverButton';
+import { StyledHoverButton } from '../hoverButton';
 import SideBarRolls from '../sideBarRolls';
 import MoreSideBar from '../moreSideBar';
 

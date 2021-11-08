@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import GilroyRegular from './fonts/Gilroy-Regular.woff';

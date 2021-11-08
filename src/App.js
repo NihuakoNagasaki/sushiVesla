@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useState } from 'react';
 import { Switch, Route } from "react-router-dom";
 import MainPage from './routes/mainPage';
